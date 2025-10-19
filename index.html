@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="HTML CSS Template" />
-    <meta name="keywords" content="template, html, css" />
+    <meta name="description" content="Comprueba si puedes subir a la atracción" />
+    <meta name="keywords" content="atracción, feria, requisitos" />
     <meta name="author" content="Your Name" />
-    <title>HTML CSS Template</title>
+    <title>Get on the ride</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="src/css/main.css" />
@@ -15,19 +15,33 @@
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
   </head>
   <body>
-    <!-- Header -->
-    <header>
-      <!-- Navigation content here -->
-    </header>
-
-    <!-- Main Content -->
-    <main>
-      <!-- Main content here -->
+    <main class="main-content">
+      <section class="ride-checker">
+        <header class="ride-checker__header">
+          <h1 class="ride-checker__title">🎢 Atracción de Feria</h1>
+          <p class="ride-checker__description">Comprueba si cumples los requisitos para subir a la atracción</p>
+        </header>
+        
+        <form class="requirements-form">
+          <fieldset class="requirements-form__fieldset">
+            <div class="input-field">
+              <label for="age" class="input-field__label">Edad (años):</label>
+              <input type="number" id="age" class="input-field__input" min="1" max="120" placeholder="Introduce tu edad">
+            </div>
+            
+            <div class="input-field">
+              <label for="height" class="input-field__label">Altura (metros):</label>
+              <input type="number" id="height" class="input-field__input" step="0.01" min="0.5" max="2.5" placeholder="Ej: 1.75">
+            </div>
+            
+            <button id="check-btn" class="check-button" type="button">Comprobar</button>
+          </fieldset>
+          
+          <div id="result" class="result-message"></div>
+        </form>
+      </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-      <!-- Footer content here -->
-    </footer>
+    <script src="src/js/main.js"></script>
   </body>
 </html>
