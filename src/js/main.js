@@ -20,7 +20,7 @@ const checkRequirements = () => {
 const showResult = (message, type) => {
   const result = document.getElementById('result');
   result.textContent = message;
-  result.className = `result-message ${type}`;
+  result.className = `ride-checker-result ride-checker-${type}`;
 };
 
 document.addEventListener('DOMContentLoaded', () => {

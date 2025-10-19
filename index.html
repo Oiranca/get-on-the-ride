@@ -15,29 +15,29 @@
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
   </head>
   <body>
-    <main class="main-content">
+    <main class="page">
       <section class="ride-checker">
-        <header class="ride-checker__header">
-          <h1 class="ride-checker__title">🎢 Atracción de Feria</h1>
-          <p class="ride-checker__description">Comprueba si cumples los requisitos para subir a la atracción</p>
+        <header class="ride-checker-header">
+          <h1 class="ride-checker-title">Atracción de Feria</h1>
+          <p class="ride-checker-description">Comprueba si cumples los requisitos para subir a la atracción</p>
         </header>
         
-        <form class="requirements-form">
-          <fieldset class="requirements-form__fieldset">
-            <div class="input-field">
-              <label for="age" class="input-field__label">Edad (años):</label>
-              <input type="number" id="age" class="input-field__input" min="1" max="120" placeholder="Introduce tu edad">
+        <form class="ride-checker-form">
+          <fieldset class="ride-checker-fieldset">
+            <div class="form-field">
+              <label for="age" class="form-field-label">Edad (años):</label>
+              <input type="number" id="age" class="form-field-input" min="1" max="120" placeholder="Introduce tu edad">
             </div>
             
-            <div class="input-field">
-              <label for="height" class="input-field__label">Altura (metros):</label>
-              <input type="number" id="height" class="input-field__input" step="0.01" min="0.5" max="2.5" placeholder="Ej: 1.75">
+            <div class="form-field">
+              <label for="height" class="form-field-label">Altura (metros):</label>
+              <input type="number" id="height" class="form-field-input" step="0.01" min="0.5" max="2.5" placeholder="Ej: 1.75">
             </div>
             
-            <button id="check-btn" class="check-button" type="button">Comprobar</button>
+            <button id="check-btn" class="ride-checker-button" type="button">Comprobar</button>
           </fieldset>
           
-          <div id="result" class="result-message"></div>
+          <div id="result" class="ride-checker-result"></div>
         </form>
       </section>
     </main>
